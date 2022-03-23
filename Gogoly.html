@@ -7,17 +7,18 @@
 <script>
 var _rollbarConfig = {
     // demo accessToken: "3cda8fbafbfe4a6599d1954b1f1a246e",
-    //90aea6f45ed344afb48d283762c81d9d
+    //jgogoly - 90aea6f45ed344afb48d283762c81d9d
     accessToken: "90aea6f45ed344afb48d283762c81d9d",
     captureUncaught: true,
     captureUnhandledRejections: true,
+    //captureIP: false,
 	autoInstrument: true,
     payload: {
         environment: "production",
 		code_version: "8ecc5aa3d069415b6b0620175f7cfd52ab0b63fb",
 		context: "home#index",
 		server: {
-      root: "file:///Library/Webserver/Documents/"
+      root: "file:///Users/johngogoly/Documents/"
       
     },
 		
@@ -49,7 +50,7 @@ var _rollbarConfig = {
 			  }
 		  });
 		  //acceptDonation('donation received');
-      gogolyError('error 1');
+      gogolyError1('error 1');
       }
 
       function sayThankYou() {
@@ -59,7 +60,7 @@ var _rollbarConfig = {
 			  }
 		  });
 		  //acceptDonation('thank you');
-      gogolyError('error 2');
+      gogolyError2('error 2');
       }
 
       function onClick() {
@@ -110,7 +111,7 @@ var _rollbarConfig = {
     Let's go see the error happening LIVE at Rollbar!!!
     <br>
     <br>
-    <a href="https://rollbar.com/jgogoly/all/items">Rollbar Demo Project</a>
+    <a href="https://rollbar.com/demo/jgogoly/items"target="_blank">Rollbar Demo Project</a>
     <br>
     <br>
     <br>
