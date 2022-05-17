@@ -1,0 +1,1 @@
+curl -H "X-Rollbar-Access-Token: 3da42fed113b4816898720b6bd1e5317" -H "Content-Type: application/json" -X POST 'https://api.rollbar.com/api/1/deploy' -d '{"environment": "qa", "revision": "e6af925a2be0a0a87c58f9e9f25f1c89a932c847", "rollbar_name": "john", "local_username": "circle-ci", "comment": "Tuesday deployment", "status": "succeeded"}'

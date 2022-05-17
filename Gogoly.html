@@ -9,15 +9,19 @@ var _rollbarConfig = {
     // demo accessToken: "3cda8fbafbfe4a6599d1954b1f1a246e",
     //jgogoly - 90aea6f45ed344afb48d283762c81d9d
     accessToken: "90aea6f45ed344afb48d283762c81d9d",
+    //JoeNamath accessToken: "b7113ca168794c12bfd153905604451f",
     captureUncaught: true,
     captureUnhandledRejections: true,
-    //captureIP: false,
-	autoInstrument: true,
+    captureIP: false,
+    autoInstrument: true,
+    
     payload: {
         environment: "production",
-		code_version: "8ecc5aa3d069415b6b0620175f7cfd52ab0b63fb",
+		// code_version is taken from github - after latest commit....
+        code_version: "e6af925a2be0a0a87c58f9e9f25f1c89a932c847",
 		context: "home#index",
-		server: {
+		//server root needs to be the location of where you are executing the code from
+    server: {
       root: "file:///Users/johngogoly/Documents/jgogoly/"
       
     },
