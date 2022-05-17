@@ -18,7 +18,7 @@ var _rollbarConfig = {
 		// code_version this example is taken from github - after latest commit....
     // hwever... you can enter any meaningful value here to help you with 
     // your own debugging efforts 
-        code_version: "e6af925a2be0a0a87c58f9e9f25f1c89a932c847",
+        code_version: "5c04b91461fe28650603f6ebda6694775725c1fc",
 		context: "home#index",
 		//server root needs to be the location of where you are executing the code from
     server: {
@@ -55,6 +55,10 @@ var _rollbarConfig = {
       NonExistentFunction2('error 2');
       }
 
+      function createError3() {		  
+      NonExistentFunction3('error 3');
+      }
+
 
     </script>
     </head>
@@ -64,7 +68,7 @@ var _rollbarConfig = {
     Rollbar 101: "Hello World!:  Welcome to Basic Training"
     <br>
     <br>
-    Fill in some values in the text boxes..."
+    <!--    html  comment here   -->    
     <br>
     <br>
     <br>
@@ -76,6 +80,7 @@ var _rollbarConfig = {
     <br>
     <button onclick="createError1();">error 1</button>
     <button onclick="createError2();">error 2</button>
+    <button onclick="createError3();">error 3</button>
     <br>
     <br>
     Let's go see the error happening LIVE at Rollbar!!!
